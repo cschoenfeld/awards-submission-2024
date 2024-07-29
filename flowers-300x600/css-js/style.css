@@ -1,0 +1,28 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute; transform: rotate3d(1, 1, 1, .01deg);}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+#ad           	 {width: 300px; height: 600px; background: #ffffff; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+#banner       	 {position: absolute; display: block; width: 300px; height: 600px; overflow: hidden; cursor: pointer; visibility: hidden; background: #ffffff;}
+.outerBorder     {width: 300px; height: 600px; border:1px solid rgba(0,0,0,1);}
+.clicktag     	 {width: 300px; height: 600px; left: 0; bottom: 0; cursor: pointer; background:transparent; opacity:0; z-index: 10;}
+.clicktag img 	 {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three  {width: 100%; height: 600px; overflow: hidden;}
+
+/*-------------------------------------
+    Banner Body
+---------------------------------------*/
+.bg,.logo        {left: 0; bottom: 0;}
+.alpha_bg        {width: 300px; height: 600px; background: #fff; left: 0; bottom: 0; opacity: 0.5}
+.kid             {left:5px}   
+.footer          {width:100%;height: 61px;bottom: 0;left:0;background: #f99d1c;}
+.copy4, .copy5   {z-index:9;}
+.cta, .hover_cta {width: 73px;right: 10px;top: 7px;}
+.hover_cta       {opacity: 0}  

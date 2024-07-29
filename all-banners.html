@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Animated Banners</title>
+	<style type="text/css">
+		body {
+			padding: 1rem;
+		}
+		.sample {
+			padding-bottom: 1.5rem;
+			border-bottom: 2px groove;
+			margin-bottom: 1.5rem;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<div class="sample">
+		<iframe width="300" height="600" border="0" src="flowers-300x600/index.html"></iframe>
+		<p><button class="reloadbtn">Restart Animation</button></p>
+	</div>
+
+	<div class="sample">
+		<iframe width="300" height="600" border="0" src="future-city-300x600/index.html"></iframe>
+		<p><button class="reloadbtn">Restart Animation</button></p>
+	</div>
+
+	<div class="sample">
+		<iframe width="300" height="600" border="0" src="solar-system-300x600/index.html"></iframe>
+		<p><button class="reloadbtn">Restart Animation</button></p>
+	</div>
+
+	<div class="sample">
+		<iframe width="300" height="600" border="0" src="stage-300x600/index.html"></iframe>
+		<p><button class="reloadbtn">Restart Animation</button></p>
+	</div>
+
+	<script type="application/javascript">
+		function reloadMe(evt) {
+			if (evt) { evt.preventDefault(); }
+			var frame = $(this).parents('.sample').find('iframe')[0];
+			frame.src = frame.src;
+		}
+		
+		$('.reloadbtn').click(reloadMe);
+	</script>	
+</body>
+</html>

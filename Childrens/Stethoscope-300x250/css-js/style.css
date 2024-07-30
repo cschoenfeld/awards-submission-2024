@@ -1,0 +1,27 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+#ad           	 {width: 300px; height: 250px; background: #ffc425; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+#banner       	 {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #ffc425;}
+.outerBorder     {width: 300px; height: 250px; border:1px solid rgba(0,0,0,.1);}
+.clicktag     	 {width: 300px; height: 250px; left: 0; bottom: 0; cursor: pointer; background:transparent; opacity:0; z-index: 10;}
+.clicktag img 	 {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three  {width: 100%; height: 250px; overflow: hidden;}
+
+/*-------------------------------------
+    Banner Body
+---------------------------------------*/
+.face            {width: 100%; height: 100%;}
+.left_eye        {width: 6px; height: 12px; background: #3a3a3a; left: 36px; top: 75px; border-radius: 3px;}
+.right_eye       {width: 6px; height: 12px; background: #3a3a3a; left: 65px; top: 75px; border-radius: 3px;}
+.mouth           {width: 37px; height: 13px; left: 35px; top: 98px;}
+.nose            {width: 16px; height: 16px; left: 46px; top: 84px; background: #ef4137; border-radius: 50%;}
+.cta             {left: 140px; top: 225px; width: 142px; height: 17px; border-radius:10px; background: #c7483d; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));}
